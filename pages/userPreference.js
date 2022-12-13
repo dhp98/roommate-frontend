@@ -37,7 +37,7 @@ export default function PageWithJSbasedForm() {
   
       console.log(JSONdata)
       // API endpoint where we send form data.
-      const endpoint = 'http://localhost:4000/api/profile'
+      const endpoint = `${process.env.PRIVATE_API_URL}/api/profile`
   
       // Form the request for sending data to the server.
       const options = {

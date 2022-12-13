@@ -45,7 +45,7 @@ export default function PageWithJSbasedForm({profile, userID}) {
   
       console.log(JSONdata)
       // API endpoint where we send form data.
-      const endpoint = `http://localhost:4000/api/profile/${userID}`
+      const endpoint = `${process.env.PRIVATE_API_URL}/api/profile/${userID}`
   
       // // Form the request for sending data to the server.
       const options = {
@@ -218,7 +218,7 @@ export async function getStaticProps() {
 
         // console.log(apartments.data)
         const userID = "6382b6a5937aeccafe208b74"
-        const url = `http://localhost:4000/api/profile?where={"userID": "${userID}"}`
+        const url = `${process.env.PRIVATE_API_URL}/api/profile?where={"userID": "${userID}"}`
         const profile= await fetchApi(`${url}`);
         return {
         props: {
