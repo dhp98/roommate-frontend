@@ -1,0 +1,221 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}
+ */
+
+/* ApartmentDetails css start */
+.horizontalCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.verticalCenter {
+  display: flex;
+  align-items: center;
+}
+
+.imgBoxOuter {
+  border: solid 1px;
+  /* width: 900px; */
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bigImgBox {
+  flex: 1;
+  border: solid 1px;
+  padding: 1px;
+  min-width: 400px;
+}
+
+.smallImgContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.smallImg1 {
+  /* min-width: 200px; */
+}
+
+.smallImg {
+  border: solid 1px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .smallImg {
+    width: 100%;
+  }
+}
+
+.smallIcon {
+  width: 90px;
+  height: 90px;
+  /* background-color: cyan; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circleBorderThin {
+  border-radius: 50%;
+  border: solid 1px;
+}
+
+.offerRow {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+
+.apartmentTitle {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.amenitiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.amenity_yes {
+  color: white;
+  margin: 5px;
+  background-color: green;
+  pointer-events: none;
+}
+
+.amenity_no {
+  color: white;
+  margin: 5px;
+  background-color: red;
+  pointer-events: none;
+}
+
+/* ApartmentDetails css end */
+
+.centerHorizontal {
+  display: flex;
+  justify-content: center;
+}
+
+/* profile */
+.profile{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.profile_section1{
+  width: 30%;
+  /* border: 1px solid; */
+}
+
+.profile_section2{
+  width: 70%;
+  /* border: solid 1px; */
+  padding: 20px;
+}
+
+.imgCircle {
+  width: 100%;
+  border-radius: 50%;
+  border: solid 3px;
+}
+
+@media (max-width:500px)  {
+  .profile_section1{
+    width: 100%;
+  }
+  
+  .profile_section2{
+    width: 100%;
+  }
+}
+
+.profile_name {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.profile_fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile_field {
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+  
+}
+
+.profile_field_icon {
+  font-size: 64px;
+}
+
+.profile_field_right {
+  padding: 5px;
+}
+
+.profile_field_title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textCenter {
+  width: 100%;
+  text-align: center;
+}
+
+.p-4 {
+  padding: 30px;
+}
+.prof {
+  grid-template-columns: 1fr 1fr;
+}
+
+.section1 {
+  background-image: linear-gradient(to right bottom, rgba(65, 65, 65, 0.8), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1628592102751-ba83b0314276");
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.footer{
+  background-color: black;  
+  padding: 20px;
+}
