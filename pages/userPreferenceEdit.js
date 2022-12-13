@@ -214,7 +214,7 @@ export default function PageWithJSbasedForm({profile, userID}) {
 
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
         // console.log(apartments.data)
         const userID = "6382b6a5937aeccafe208b74"
