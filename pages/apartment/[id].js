@@ -15,7 +15,7 @@ import { Button, Grid, Paper } from '@mui/material';
 import IosShareIcon from '@mui/icons-material/IosShare';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import apartment from '../../../backend/models/apartment';
+// import apartment from '../../../backend/models/apartment';
 // import ImgCarousel from '../components/ImgCarousel';
 import DoneIcon from '@mui/icons-material/Done';
 import CloseIcon from '@mui/icons-material/Close';
